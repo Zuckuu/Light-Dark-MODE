@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light and Dark</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h1>
+        <a href="./index.html">Go Back</a>
+      </h1>
+      <button class="btn" id="check">Go Dark Mode</button>
+    </section>
+
+    <script>
+        if(localStorage.getItem('darkMode')) {
+            document.body.classList.add('dark-theme');
+        }
+    </script>
+  </body>
+</html>

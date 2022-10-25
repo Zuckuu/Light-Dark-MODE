@@ -1,0 +1,29 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 60px; 
+}
+
+
+.btn{
+    font-size: 20px;
+}
+
+
+.dark-theme section {
+    background-color: #242424;
+  }
+
+.dark-theme h1{
+    color: white;
+}
