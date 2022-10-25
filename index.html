@@ -15,5 +15,10 @@
       </h1>
       <button class="btn" id="check">Go Dark Mode</button>
     </section>
+    <script>
+        if(localStorage.getItem('darkMode')==='true') {
+            document.body.classList.add('dark-theme');
+        }
+    </script>
   </body>
 </html>

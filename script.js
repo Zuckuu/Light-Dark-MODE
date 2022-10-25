@@ -5,12 +5,13 @@ if (localStorage.getItem("darkMode") === null) {
 const check = document
   .getElementById("check")
   .addEventListener("click", function () { 
-    if (localStorage.getItem("darkMode") === "true") {
-      localStorage.setItem("darkMode", "false");
-      document.body.classList.remove("dark-theme");
-    } else {
+    if (localStorage.getItem("darkMode") === "false") {
+      
       localStorage.setItem("darkMode", "true");
       document.body.classList += " dark-theme";
+    } else {
+        localStorage.setItem("darkMode", "false");
+        document.body.classList.remove("dark-theme");
     }
   });
 
